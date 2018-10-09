@@ -4,6 +4,14 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax on
 
+" Change mapleader
+let mapleader=","
+
+" Local dirs
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
+set undodir=~/.vim/undo
+
 set tabstop=4
 set expandtab
 set autoindent
@@ -22,8 +30,12 @@ colorscheme gruvbox
 " Uncomment below to make screen not flash on error
 " set vb vb_t=""
 
+" NERDTree Config
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
 map <C-o> :NERDTreeToggle<CR>
+
+" Airline config
+let g:airline_extensions = []
 
