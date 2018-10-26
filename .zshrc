@@ -164,9 +164,6 @@ alias mp="mplayer -fs"
 alias folders="find . -maxdepth 1 -type d -print | xargs du -sk | sort -rn"
 
 
-export BB=/opt/bb/bin
-export PATH=$PATH:$BB
-export no_proxy=$no_proxy,blp-dpkg.dev.bloomberg.com
 export TMPDIR=/tmp
 export DISPLAY=localhost:0.0
 
